@@ -1,0 +1,29 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+
+# Sensitive files - never commit these
+*.pem
+*.key
+*credentials*
+sp-credentials-temp.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Ansible
+*.retry
+
+# Packer
+packer_cache/
+*.box
