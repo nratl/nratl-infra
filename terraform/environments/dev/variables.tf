@@ -1,3 +1,4 @@
+# NRATL dev environment variables
 variable "subscription_id" {
   description = "Azure subscription ID"
   type        = string
