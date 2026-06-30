@@ -27,3 +27,7 @@ Thumbs.db
 # Packer
 packer_cache/
 *.box
+# Terraform variable files (may contain sensitive values)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
