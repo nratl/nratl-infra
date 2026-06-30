@@ -9,11 +9,11 @@ module "aks" {
   source = "../../modules/aks"
 
   cluster_name        = "aks-nratl-${var.environment}"
-  location             = var.location
-  resource_group_name  = var.resource_group_name
-  dns_prefix           = "nratl-${var.environment}"
-  kubernetes_version    = "1.29"
-  vnet_subnet_id        = module.network.subnet_aks_id
+  location            = var.location
+  resource_group_name = var.resource_group_name
+  dns_prefix          = "nratl-${var.environment}"
+  kubernetes_version  = "1.29"
+  vnet_subnet_id      = module.network.subnet_aks_id
 
   system_node_count = 1
   system_vm_size    = "Standard_B2s"
