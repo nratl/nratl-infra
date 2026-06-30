@@ -12,7 +12,7 @@ module "aks" {
   location            = var.location
   resource_group_name = var.resource_group_name
   dns_prefix          = "nratl-${var.environment}"
-  kubernetes_version  = "1.31"
+  kubernetes_version  = "1.36.0"
   vnet_subnet_id      = module.network.subnet_aks_id
 
   system_node_count = 1
