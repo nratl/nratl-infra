@@ -16,9 +16,9 @@ module "aks" {
   vnet_subnet_id      = module.network.subnet_aks_id
 
   system_node_count = 1
-  system_vm_size    = "Standard_B2s"
+  system_vm_size    = "standard_d2s_v3"
   user_node_count   = 1
-  user_vm_size      = "Standard_B2s"
+  user_vm_size      = "standard_d2s_v3"
 
   tags = {
     environment = var.environment
